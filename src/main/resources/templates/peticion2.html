@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Petición 2 - Estadísticas</title>
+</head>
+<body>
+    <h2>Datos Estadísticos de la Duración en Días:</h2>
+    <ul>
+        <li>Conteo total: <span th:text="${count}"></span></li>
+        <li>Suma total de días: <span th:text="${sum}"></span></li>
+        <li>Promedio de días: <span th:text="${average}"></span></li>
+        <li>Mínimo de días: <span th:text="${min}"></span></li>
+        <li>Máximo de días: <span th:text="${max}"></span></li>
+    </ul>
+</body>
+</html>

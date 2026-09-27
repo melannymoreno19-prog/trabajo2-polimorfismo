@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Petición 3 - Lista de Tipos</title>
+</head>
+<body>
+    <h2>Lista de todos los tipos de construcciones:</h2>
+    <ul>
+        <li th:each="tipo : ${tipos}" th:text="${tipo}"></li>
+    </ul>
+</body>
+</html>

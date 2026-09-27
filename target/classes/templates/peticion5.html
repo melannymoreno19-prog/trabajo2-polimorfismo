@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Petición 5 - Elemento Máximo</title>
+</head>
+<body>
+    <h2>Construcción con mayor duración en días:</h2>
+    <div th:if="${mayorConstruccion != null}">
+        <p><strong>Tipo:</strong> <span th:text="${mayorConstruccion.tipo}"></span></p>
+        <p><strong>Duración:</strong> <span th:text="${mayorConstruccion.duracionDias}"></span> días</p>
+        <p><strong>Costo Estimado:</strong> $<span th:text="${mayorConstruccion.costoEstimado}"></span></p>
+    </div>
+</body>
+</html>
